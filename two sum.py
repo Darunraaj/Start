@@ -1,4 +1,4 @@
-nums = [5,4,19,2,8,2]
+nums = [5,4,19,2,8,7]
 target = 10
 
 if nums[0]+nums[1]== target:
