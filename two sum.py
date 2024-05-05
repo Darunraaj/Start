@@ -1,13 +1,11 @@
-nums = [5,4,19,2,8,7]
-target = 10
+#nums = [5,4,19,2,8,7]
+#target = 10
+def two_sum(nums : list , target:int):
+    for i in range (0,len(nums)):
+        for j in range (i+1,len(nums)):
+            if nums[i] + nums[j] == target:
+                return [i,j]
+    return [-1]
 
-if nums[0]+nums[1]== target:
-    print ("output= [0,1]")
-elif nums[1]+nums[2]== target:
-    print ("output= [1,2]")
-elif nums[2]+nums[3]== target:
-    print ("output= [2,3]")
-elif nums[3]+nums[4]== target:
-    print ("output= [3,4]")
-elif nums[4]+nums[5]== target:
-    print ("output= [4,5]")
+
+print (two_sum([9,4,5,3,8,15] , 11))
